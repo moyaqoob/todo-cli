@@ -102,7 +102,7 @@ func main() {
 	fmt.Println("\nHere are the list of operations \n 1.Add \n 2.Delete \n 3.showAllTodos\n 4.Complete\n 5.quit")
 	
 	for{
-		fmt.Print("\n Pick one?\n")
+		fmt.Print("\n Enter your choice?\n")
 		choice, _ := reader.ReadString('\n')
 		choice = strings.TrimSpace(choice)
 		switch choice {
@@ -110,7 +110,7 @@ func main() {
 			addTodo()
 		case "delete":
 			deleteTodo()
-		case "showAll":
+		case "ShowAll":
 			showTodos()
 		case "complete":
 			markTodo()
